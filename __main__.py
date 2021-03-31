@@ -21,7 +21,8 @@ url = "https://www.pepper.pl/grupa/karty-graficzne"
 ##
 i=0
 while(True):
-    print("check no. 1")
+    i=i+1
+    print("check no. {0}".format(i))
     try:
         html_doc = requests.get(url)
         soup = BeautifulSoup(html_doc.text,'html.parser')
